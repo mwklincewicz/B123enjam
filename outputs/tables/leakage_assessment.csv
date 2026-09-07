@@ -1,0 +1,8 @@
+variable,risk,decision
+position,Direct target leakage,Exclude from predictors
+result,Unique identifier,Exclude from predictors
+created_at,Collection-order proxy,Exclude from primary models
+seo_score,Composite of category scores,Use only as separate baseline
+seo_classification,Derived from seo_score,Exclude from primary models
+analysis_explanation,Contains score calculation,Exclude from predictors
+query,Repeated-observation dependence,Use for grouped splitting

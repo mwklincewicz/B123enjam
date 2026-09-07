@@ -1,0 +1,13 @@
+check,count
+Rows,87201
+Columns before target/flags,53
+Completely duplicated rows,0
+Duplicated result IDs,0
+Repeated URL occurrences,26193
+Positions outside 1-20,0
+Missing queries,0
+Missing search engines,0
+Missing complete SEO analyses,1329
+Negative loading times,1600
+robots_txt values equal to -1,31
+Missing loading times after correction,2929
