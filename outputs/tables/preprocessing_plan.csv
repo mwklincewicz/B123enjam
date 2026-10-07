@@ -1,10 +1,10 @@
 finding,planned_action
 Missing complete SEO analyses,Exclude affected rows from SEO models
-Negative loading times,Recode as missing; impute from training data
-robots_txt value -1,Recode as missing; impute from training data
-Skewed count predictors,Use log1p for Logistic Regression
-Different predictor scales,Scale for Logistic Regression
-Approximately 25/75 target split,Assess class weights and suitable metrics
+Negative loading times,Recode as missing and impute from training data
+robots_txt value -1,Recode as missing and impute from training data
+Skewed count predictors,Consider log1p transformation for Logistic Regression
+Different predictor scales,Scale predictors for Logistic Regression
+Approximately 25/75 class distribution,Use evaluation metrics suitable for class imbalance
 Repeated queries,Use query-grouped train/test splitting
-SEO score/category overlap,Use three separate model specifications
-Redundant internal/external link fields,Retain *_link_count fields and exclude internal_links/external_links
+SEO score/category overlap,Evaluate separate feature specifications
+Redundant internal/external link fields,Retain *_link_count and exclude internal_links/external_links

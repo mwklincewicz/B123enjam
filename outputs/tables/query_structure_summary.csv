@@ -1,3 +1,8 @@
-,unique_queries,query_engine_groups,count,mean,std,min,25%,50%,75%,max
-result_count,1519,4556,4556.0,19.139815627743634,1.7755466340380237,1.0,19.0,20.0,20.0,38.0
-top_5_rate,1519,4556,4556.0,0.2540771973811316,0.0395496616648603,0.0,0.25,0.25,0.2631578947368421,1.0
+measure,value
+Unique queries overall,1519.0
+Query-search-engine groups,4556.0
+Search engines,3.0
+Mean results per query-engine group,19.139815627743634
+Median results per query-engine group,20.0
+Minimum results per query-engine group,1.0
+Maximum results per query-engine group,38.0

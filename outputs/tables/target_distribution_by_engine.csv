@@ -1,4 +1,4 @@
-searchengine,not_top_5_pct,top_5_pct
-Bing_DE,74.85,25.15
-DuckDuckGo_DE,74.88,25.12
-Google_DE,74.53,25.47
+searchengine,not_top_5_n,top_5_n,total_n,not_top_5_pct,top_5_pct
+Bing_DE,21848,7341,29189,74.85,25.15
+DuckDuckGo_DE,21879,7338,29217,74.88,25.12
+Google_DE,21461,7334,28795,74.53,25.47
