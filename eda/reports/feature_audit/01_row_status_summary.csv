@@ -1,0 +1,13 @@
+check,rows,percentage
+rows_total,87201,100.0
+seo_score_excluded,225,0.25802456393848694
+seo_score_error,1104,1.266040527058176
+seo_score_excluded_or_error,1329,1.5240650909966629
+seo_score_numeric_missing,1329,1.5240650909966629
+exclusion_reason_nonempty,225,0.25802456393848694
+content_type_nonempty,225,0.25802456393848694
+all_detailed_scores_missing,1329,1.5240650909966629
+excluded_or_error_AND_exclusion_reason,225,0.25802456393848694
+content_type_AND_exclusion_reason,225,0.25802456393848694
+candidate_unusable_union,1329,1.5240650909966629
+candidate_usable,85872,98.47593490900334

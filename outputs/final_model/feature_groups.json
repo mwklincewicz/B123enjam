@@ -1,0 +1,59 @@
+{
+  "technical_binary": [
+    "https",
+    "robots_txt",
+    "sitemap",
+    "viewport",
+    "wordpress",
+    "h1_present",
+    "canonical_present"
+  ],
+  "links_performance": [
+    "log_external_link_count",
+    "log_internal_link_count",
+    "log_nofollow",
+    "log_loading_time",
+    "log_url_length"
+  ],
+  "retained_scores": [
+    "content_length_score",
+    "link_quality_score",
+    "navigation_score"
+  ],
+  "technology_tools": [
+    "analytics_tool_count",
+    "ads_tool_count",
+    "seo_tool_count"
+  ],
+  "structured_data": [
+    "micros_count",
+    "has_json_ld",
+    "has_schema_org",
+    "has_rel_license"
+  ],
+  "url_structure": [
+    "url_path_depth",
+    "url_parameter_count",
+    "url_digit_count",
+    "url_slug_length",
+    "url_is_homepage",
+    "is_social_platform"
+  ],
+  "title_description": [
+    "page_title_length",
+    "meta_description_length"
+  ],
+  "keywords": [
+    "keyword_in_url",
+    "keyword_in_title",
+    "keyword_in_description",
+    "keyword_in_headers"
+  ],
+  "social_metadata": [
+    "og_tag_count",
+    "twitter_tag_count"
+  ],
+  "searchengine_context": [
+    "searchengine"
+  ]
+}

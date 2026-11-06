@@ -1,0 +1,52 @@
+LOCKED THESIS RESEARCH-QUESTION ANALYSES
+================================================================================
+
+RQ1 - BROAD SEO CATEGORIES
+Best standalone category specification: only_category_meta_elements
+Standalone category PR-AUC: 0.3280
+Highest category permutation importance: Meta Elements
+
+RQ2 - OVERALL PREDICTIVE PERFORMANCE
+development_grouped_cv: PR-AUC=0.5105, ROC-AUC=0.6981, F1=0.4483, balanced accuracy=0.6352
+comparative_holdout: PR-AUC=0.5108, ROC-AUC=0.6983, F1=0.4514, balanced accuracy=0.6360
+
+RQ3 - MODEL COMPARISON
+Best model by grouped-CV PR-AUC: random_forest (0.5105)
+
+RQ4 - MOST IMPORTANT INDIVIDUAL CHARACTERISTICS
+1. page_title_length (importance=0.0501)
+2. log_nofollow (importance=0.0430)
+3. micros_count (importance=0.0391)
+4. h1_present (importance=0.0343)
+5. log_internal_link_count (importance=0.0338)
+6. meta_description_length (importance=0.0323)
+7. log_url_length (importance=0.0233)
+8. searchengine (importance=0.0201)
+9. analytics_tool_count (importance=0.0172)
+10. url_slug_length (importance=0.0162)
+
+RQ4 - MOST IMPORTANT FEATURE GROUPS
+1. links_performance (group importance=0.1372)
+2. title_description (group importance=0.0863)
+3. structured_data (group importance=0.0663)
+4. url_structure (group importance=0.0544)
+5. technical_binary (group importance=0.0372)
+
+RQ5 - PERFORMANCE BY SEARCH ENGINE (DEVELOPMENT CV)
+Google_DE: PR-AUC=0.5871 ± 0.0138
+DuckDuckGo_DE: PR-AUC=0.5117 ± 0.0079
+Bing_DE: PR-AUC=0.4184 ± 0.0072
+
+RQ5 - COMPARATIVE HOLD-OUT PERFORMANCE
+Google_DE: PR-AUC=0.6018, ROC-AUC=0.7545
+DuckDuckGo_DE: PR-AUC=0.4985, ROC-AUC=0.6934
+Bing_DE: PR-AUC=0.4139, ROC-AUC=0.6379
+
+RQ5 - TOP FEATURES BY SEARCH ENGINE
+Bing_DE: meta_description_length, page_title_length, log_internal_link_count, log_nofollow, log_url_length
+DuckDuckGo_DE: page_title_length, log_nofollow, micros_count, h1_present, log_internal_link_count
+Google_DE: log_nofollow, micros_count, h1_present, log_internal_link_count, page_title_length
+
+INTERPRETATION NOTE
+Permutation importance measures predictive contribution, not causal effect.
+Use rq4_feature_direction.csv to describe whether feature values are higher or lower among Top-5 observations.

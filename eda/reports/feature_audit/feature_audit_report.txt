@@ -1,0 +1,63 @@
+================================================================================
+FEATURE ENGINEERING AUDIT
+================================================================================
+
+Rows in raw file: 87,201
+Columns in raw file: 54
+
+ROW STATUS
+--------------------------------------------------------------------------------
+rows_total: 87,201 (100.00%)
+seo_score_excluded: 225 (0.26%)
+seo_score_error: 1,104 (1.27%)
+seo_score_excluded_or_error: 1,329 (1.52%)
+seo_score_numeric_missing: 1,329 (1.52%)
+exclusion_reason_nonempty: 225 (0.26%)
+content_type_nonempty: 225 (0.26%)
+all_detailed_scores_missing: 1,329 (1.52%)
+excluded_or_error_AND_exclusion_reason: 225 (0.26%)
+content_type_AND_exclusion_reason: 225 (0.26%)
+candidate_unusable_union: 1,329 (1.52%)
+candidate_usable: 85,872 (98.48%)
+
+TOOLS
+--------------------------------------------------------------------------------
+tools_ads: 5,509 rows (6.32%), max 2 tools
+tools_analytics: 33,963 rows (38.95%), max 3 tools
+tools_caching: 0 rows (0.00%), max 0 tools
+tools_seo: 5,250 rows (6.02%), max 2 tools
+tools_social: 0 rows (0.00%), max 0 tools
+
+TOP 15 NEW CANDIDATE FEATURES BY ABSOLUTE CORRELATION WITH TOP-5
+--------------------------------------------------------------------------------
+serp_description_word_count      corr=-0.0785 | mean Top5=26.614 | mean non-Top5=28.549
+serp_title_length                corr=-0.0752 | mean Top5=45.778 | mean non-Top5=48.633
+has_analytics_tool               corr=-0.0736 | mean Top5=0.328 | mean non-Top5=0.410
+serp_description_length          corr=-0.0731 | mean Top5=175.708 | mean non-Top5=186.900
+serp_title_word_count            corr=-0.0726 | mean Top5=7.027 | mean non-Top5=7.509
+analytics_tool_count             corr=-0.0706 | mean Top5=0.396 | mean non-Top5=0.502
+total_tool_count                 corr=-0.0642 | mean Top5=0.515 | mean non-Top5=0.629
+url_is_homepage                  corr=+0.0528 | mean Top5=0.062 | mean non-Top5=0.037
+url_path_depth                   corr=-0.0504 | mean Top5=2.453 | mean non-Top5=2.609
+page_title_word_count            corr=-0.0462 | mean Top5=8.261 | mean non-Top5=8.756
+micros_count                     corr=+0.0461 | mean Top5=2.914 | mean non-Top5=2.788
+url_slug_length                  corr=-0.0434 | mean Top5=29.459 | mean non-Top5=32.843
+page_title_length                corr=-0.0429 | mean Top5=54.717 | mean non-Top5=57.648
+has_twitter_card                 corr=-0.0412 | mean Top5=0.504 | mean non-Top5=0.551
+has_schema_org                   corr=+0.0390 | mean Top5=0.798 | mean non-Top5=0.760
+
+FILES CREATED
+--------------------------------------------------------------------------------
+01_row_status_summary.csv
+02_candidate_unusable_rows.csv
+03_tools_column_summary.csv
+04_tools_items.csv
+05_micros_items.csv
+06_keyword_reason_items.csv
+07_social_tag_items.csv
+08_domain_summary.csv
+09_candidate_feature_summary.csv
+10_candidate_features.csv
+
+Important: this script only audits/constructs candidate features.
+It does NOT retrain a model and does NOT use a held-out test set for model selection.

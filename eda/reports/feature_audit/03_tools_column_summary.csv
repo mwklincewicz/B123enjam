@@ -1,0 +1,6 @@
+column,rows_with_tools,percentage_with_tools,mean_tool_count_all_rows,mean_tool_count_positive_rows,max_tool_count
+tools_ads,5509,6.317588101053887,0.06474696391096432,1.0248683971682702,2
+tools_analytics,33963,38.94794784463481,0.4750633593651449,1.2197391278744516,3
+tools_caching,0,0.0,0.0,0.0,0
+tools_seo,5250,6.020573158564695,0.06035481244481141,1.0024761904761905,2
+tools_social,0,0.0,0.0,0.0,0

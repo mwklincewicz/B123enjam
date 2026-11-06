@@ -1,0 +1,174 @@
+{
+  "status": "locked_final_model",
+  "split": {
+    "rows_raw": 87201,
+    "rows_status_excluded": 225,
+    "rows_status_error": 1104,
+    "rows_removed_unusable": 1329,
+    "rows_usable": 85872,
+    "queries_usable": 1519,
+    "top5_prevalence": 0.2527715669834172,
+    "rows_development": 68667,
+    "rows_test": 17205,
+    "queries_development": 1215,
+    "queries_test": 304,
+    "query_overlap_count": 0,
+    "top5_prevalence_development": 0.2526978024378522,
+    "top5_prevalence_test": 0.25306596919500146,
+    "conceptual_feature_count": 37
+  },
+  "conceptual_feature_count": 37,
+  "transformed_feature_count": 39,
+  "features": [
+    "https",
+    "robots_txt",
+    "sitemap",
+    "viewport",
+    "wordpress",
+    "h1_present",
+    "canonical_present",
+    "log_external_link_count",
+    "log_internal_link_count",
+    "log_nofollow",
+    "log_loading_time",
+    "log_url_length",
+    "content_length_score",
+    "link_quality_score",
+    "navigation_score",
+    "analytics_tool_count",
+    "ads_tool_count",
+    "seo_tool_count",
+    "micros_count",
+    "has_json_ld",
+    "has_schema_org",
+    "has_rel_license",
+    "url_path_depth",
+    "url_parameter_count",
+    "url_digit_count",
+    "url_slug_length",
+    "url_is_homepage",
+    "is_social_platform",
+    "page_title_length",
+    "meta_description_length",
+    "keyword_in_url",
+    "keyword_in_title",
+    "keyword_in_description",
+    "keyword_in_headers",
+    "og_tag_count",
+    "twitter_tag_count",
+    "searchengine"
+  ],
+  "feature_groups": {
+    "technical_binary": [
+      "https",
+      "robots_txt",
+      "sitemap",
+      "viewport",
+      "wordpress",
+      "h1_present",
+      "canonical_present"
+    ],
+    "links_performance": [
+      "log_external_link_count",
+      "log_internal_link_count",
+      "log_nofollow",
+      "log_loading_time",
+      "log_url_length"
+    ],
+    "retained_scores": [
+      "content_length_score",
+      "link_quality_score",
+      "navigation_score"
+    ],
+    "technology_tools": [
+      "analytics_tool_count",
+      "ads_tool_count",
+      "seo_tool_count"
+    ],
+    "structured_data": [
+      "micros_count",
+      "has_json_ld",
+      "has_schema_org",
+      "has_rel_license"
+    ],
+    "url_structure": [
+      "url_path_depth",
+      "url_parameter_count",
+      "url_digit_count",
+      "url_slug_length",
+      "url_is_homepage",
+      "is_social_platform"
+    ],
+    "title_description": [
+      "page_title_length",
+      "meta_description_length"
+    ],
+    "keywords": [
+      "keyword_in_url",
+      "keyword_in_title",
+      "keyword_in_description",
+      "keyword_in_headers"
+    ],
+    "social_metadata": [
+      "og_tag_count",
+      "twitter_tag_count"
+    ],
+    "searchengine_context": [
+      "searchengine"
+    ]
+  },
+  "models_compared": [
+    "random_forest",
+    "xgboost",
+    "logistic_regression",
+    "dummy"
+  ],
+  "locked_final_model": "random_forest",
+  "random_forest_parameters": {
+    "n_estimators": 400,
+    "max_depth": 30,
+    "min_samples_split": 2,
+    "min_samples_leaf": 3,
+    "max_features": 0.2,
+    "max_samples": null,
+    "class_weight": "balanced"
+  },
+  "xgboost_parameters": {
+    "n_estimators": 700,
+    "max_depth": 9,
+    "learning_rate": 0.02,
+    "min_child_weight": 1,
+    "gamma": 0.0,
+    "subsample": 0.75,
+    "colsample_bytree": 1.0,
+    "reg_alpha": 0.0,
+    "reg_lambda": 20.0,
+    "scale_pos_weight": 3.0
+  },
+  "locked_model_cv_metrics": {
+    "model": "random_forest",
+    "precision_mean": 0.5128905215248024,
+    "precision_std": 0.007307294455805935,
+    "recall_mean": 0.3982690951565854,
+    "recall_std": 0.013505587219787918,
+    "f1_mean": 0.44827655289367063,
+    "f1_std": 0.009875399363092717,
+    "balanced_accuracy_mean": 0.6351768253830188,
+    "balanced_accuracy_std": 0.0053549046087844375,
+    "roc_auc_mean": 0.6981067883197403,
+    "roc_auc_std": 0.005126095956599328,
+    "pr_auc_mean": 0.5105489769336965,
+    "pr_auc_std": 0.008477740032846506
+  },
+  "holdout_metrics": {
+    "precision": 0.4997211377579476,
+    "recall": 0.4115755627009646,
+    "f1": 0.4513853904282116,
+    "balanced_accuracy": 0.635987765787491,
+    "roc_auc": 0.6982520980817308,
+    "pr_auc": 0.5108289301528907,
+    "naive_pr_auc": 0.25306596919500146
+  },
+  "classification_threshold": 0.5,
+  "note": "The same hold-out split was inspected during earlier development. Model and feature decisions are therefore based on development CV; the hold-out is retained as comparative evidence."
+}
