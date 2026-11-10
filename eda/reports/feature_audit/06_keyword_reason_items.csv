@@ -1,0 +1,5 @@
+source,item,rows_with_item,row_percentage,total_occurrences,top5_rows_with_item,top5_rate_when_present
+keyword_optimization_reasons,Keyword in title,52319,59.998165158656434,52319,13544,0.2588734494160821
+keyword_optimization_reasons,Keyword in headers,51074,58.57042923819681,51074,13191,0.2582723107647727
+keyword_optimization_reasons,Keyword in description,36237,41.555716104173115,36237,8571,0.23652620250020698
+keyword_optimization_reasons,Keyword in URL,16773,19.234871159734407,16773,4246,0.25314493531270493

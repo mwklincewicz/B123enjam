@@ -5,8 +5,8 @@ Run from the project root with:
     python src/eda.py
 
 Outputs:
-    outputs/figures/
-    outputs/tables/
+    eda/figures/
+    eda/tables/
 """
 
 from pathlib import Path
@@ -25,8 +25,8 @@ from statsmodels.tools.tools import add_constant
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = PROJECT_ROOT / "data" / "RAT_Search_Results_Trends_SEO_2025.csv"
-FIGURES_PATH = PROJECT_ROOT / "outputs" / "figures"
-TABLES_PATH = PROJECT_ROOT / "outputs" / "tables"
+FIGURES_PATH = PROJECT_ROOT / "eda" / "figures"
+TABLES_PATH = PROJECT_ROOT / "eda" / "tables"
 
 CATEGORY_FEATURES = [
     "category_content_quality",
@@ -79,7 +79,7 @@ ALL_EDA_FEATURES = (
 # =============================================================================
 
 def save_table(df, filename, index=False):
-    """Save a DataFrame to outputs/tables."""
+    """Save a DataFrame to eda/tables."""
     df.to_csv(TABLES_PATH / filename, index=index)
 
 
